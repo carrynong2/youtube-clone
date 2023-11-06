@@ -1,6 +1,6 @@
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react";
 import logo from "../assets/youtube.png";
-import Button from "../component/Button";
+import { Button } from "../component/Button";
 import { useState } from "react"
 
 export function PageHeader() {

@@ -23,10 +23,8 @@ export const buttonStyles = cva(["transition-colors"], {
 
 type ButtonProps = VariantProps<typeof buttonStyles> & ComponentProps<"button">
 
-const Button = ({ variant, size, className, ...props }: ButtonProps) => {
+export const Button = ({ variant, size, className, ...props }: ButtonProps) => {
   return (
     <button {...props} className={twMerge(buttonStyles({ variant, size, className }), className)} />
   )
 }
-
-export default Button
